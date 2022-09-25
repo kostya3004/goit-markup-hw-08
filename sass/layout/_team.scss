@@ -1,0 +1,30 @@
+.team {
+    background-color: #F5F4FA;
+}
+.team-list {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+.team-card {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-basis: calc((100% - 90px) / 4);
+}
+.team-card-photo {
+    margin-bottom: 30px;
+}
+.team-card-name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    margin-bottom: 10px;
+}
+.team-card-job-title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+}

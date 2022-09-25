@@ -1,0 +1,28 @@
+.what-we-do-list {
+    display: flex;
+    gap: 30px;
+}
+
+.what-we-do-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center; */
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--dark-scheme-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-overlay {
+    position: relative;
+    overflow: auto;
+}
