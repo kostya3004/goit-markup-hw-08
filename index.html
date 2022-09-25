@@ -21,7 +21,12 @@
     <header class="page-header">
       <div class="container page-header__container">
         <a class="logo logo-header" href="./index.html"><span>Web</span>Studio</a>
-        <nav>
+        <button type="button" class="mobile-menu-btn">
+          <svg class="mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <nav class="page-header__navigation">
           <ul class="page-header__navigation-list">
             <li>
               <a class="page-header__navigation-item current" href="./index.html">Студія</a>
@@ -53,9 +58,41 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__navigation-list">
+          <li>
+            <a class="mobile-menu__navigation-list-item mobile-menu__current" href="./index.html">Студія</a>
+          </li>
+          <li>
+            <a class="mobile-menu__navigation-list-item" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li>
+            <a class="mobile-menu__navigation-list-item" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts-list">
+          <li class="mobile-menu__contacts-list-item">
+            <a class="mobile-menu__contacts-tel" href="tel:+380961111111"> +380961111111 </a>
+          </li>
+          <li class="mobile-menu__contacts-list-item">
+            <a class="mobile-menu__contacts-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li><a href="" class="mobile-menu__social-list-item">Instagram</a></li>
+          <li><a href="" class="mobile-menu__social-list-item">Twitter</a></li>
+          <li><a href="" class="mobile-menu__social-list-item">Facebook</a></li>
+          <li><a href="" class="mobile-menu__social-list-item">Linkedin</a></li>
+        </ul>
+        <button class="mobile-menu__btn-close" type="button">
+          <svg class="mobile-menu__icon-close">
+            <use href="./images/icons.svg#mobile-menu-icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="heading section">
         <div class="container">
           <h1 class="index-heading">Ефективні рішення для вашого бізнесу</h1>
@@ -443,7 +480,7 @@
       <div class="modal">
         <button class="modal-form-btn-close" type="button" data-modal-close>
           <svg class="modal-form-icon-close" width="18" height="18">
-            <use aria-label="close icon" href="./images/icons.svg#icon-close"></use>
+            <use aria-label="close icon" href="./images/icons.svg#modal-form-icon-close"></use>
           </svg>
         </button>
         <p class="modal-form-heading">Залиште свої дані, ми вам передзвонимо</p>
@@ -493,6 +530,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
