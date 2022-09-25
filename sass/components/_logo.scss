@@ -25,3 +25,13 @@
 .logo-footer>span {
     color: var(--accent-color)
 }
+
+@media screen and (max-width: 1199px){
+    .logo {
+        line-height: 1.17;
+        font-size: 24px;
+    }
+    .logo-header {
+        margin-right: 87px;
+}
+}
