@@ -40,11 +40,11 @@ address a {
 
 .subscribe-input {
     width: 450px;
+    display: block;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
     line-height: 125%;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -83,6 +83,15 @@ address a {
     position: relative;
 }
 
+@media screen and (max-width: 767px) {
+    .subscribe-container {
+        width: 100%;
+    }
+    .subscribe-input {
+    width: 100%;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .page-footer__address {
         text-align: center;
@@ -92,8 +101,10 @@ address a {
         margin-bottom: 60px;
         text-align: center;
     }
+
     .subscribe-form {
         text-align: center;
+        width: 100%;
     }
     .subscribe-text {
         text-align: center;
@@ -129,6 +140,7 @@ address a {
     }
     .subscribe-input {
         width: 358px;
+        margin-right: 12px;
 }
 }
 
