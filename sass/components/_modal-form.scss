@@ -86,7 +86,7 @@
     align-self: center;
     margin-bottom: 30px;
     position: relative;
-        &>a {
+        a {
         font-size: 12px;
         line-height: 117%;
         color: var(--accent-color);}
@@ -129,7 +129,7 @@
         line-height: 115%;
     }    
     .modal-form-terms-checkbox {
-            &>a {
+            a {
             font-size: 14px;
             line-height: 171%;
             color: var(--accent-color);}
