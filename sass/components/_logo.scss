@@ -19,7 +19,6 @@
     color: var(--dark-scheme-text-color);
     display: inline-block;
     margin-bottom: 20px;
-    margin-right: 156px;
 }
 
 .logo-footer>span {
@@ -33,5 +32,10 @@
     }
     .logo-header {
         margin-right: 87px;
+    }
 }
+@media screen and (min-width: 1200px) {
+    .logo-footer {
+        margin-right: 156px;
+    }
 }
