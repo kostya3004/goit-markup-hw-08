@@ -19,11 +19,16 @@
         background-color: var(--accent-color);}
 }
 
-
 .social-list_light-theme {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
+@media screen and (min-width:1200px) {
+    .social-list_light-theme {
+        margin-bottom: 30px;
+    }
+}
+
 .social-list_light-theme-icon {
     fill: #AFB1B8;
     transition: fill var(--transition-prop);

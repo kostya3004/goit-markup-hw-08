@@ -32,7 +32,6 @@ li {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -49,12 +48,20 @@ body {
 }
 
 .index-heading2 {
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 118%;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .index-heading2 {
+    font-size: 36px;
+    line-height: 117%;
+    margin-bottom: 50px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -78,10 +85,16 @@ body {
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -483,9 +496,14 @@ body {
 
 .social-list_light-theme {
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-list_light-theme {
+    margin-bottom: 30px;
+  }
+}
 .social-list_light-theme-icon {
   fill: #AFB1B8;
   transition: fill var(--transition-prop);
@@ -730,19 +748,15 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-desktop/hero-bg-desktop@2x.jpg);
   }
 }
-.advantages {
-  padding-bottom: 0px;
-}
-
 .advantages__list-item {
-  width: 270px;
+  max-width: 450px;
   /* flex-basis: calc((100% - 90px) / 4); */
 }
 
 .advantages__icon-bg {
   background-color: #F5F4FA;
   border-radius: 4px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -753,6 +767,7 @@ body {
 .advantages__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 
 .advantages__list-heading {
@@ -761,6 +776,7 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .advantages__list-text {
@@ -770,43 +786,73 @@ body {
   line-height: 1.7;
 }
 
-.what-we-do-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .advantages__list-item {
+    width: 354px;
+    /* flex-basis: calc((100% - 30px) / 2); */
+  }
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__list-heading {
+    text-align: start;
+  }
 }
-
-.what-we-do-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center; */
-  display: flex;
-  height: 70px;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: var(--dark-scheme-text-color);
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .advantages__list-item {
+    width: 270px;
+    /* flex-basis: calc((100% - 90px) / 4); */
+  }
+  .advantages {
+    padding-bottom: 0px;
+  }
 }
-
-.what-we-do-overlay {
-  position: relative;
-  overflow: auto;
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .what-we-do-list {
+    display: flex;
+    gap: 30px;
+  }
+  .what-we-do-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center; */
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--dark-scheme-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .what-we-do-overlay {
+    position: relative;
+    overflow: auto;
+  }
+}
 .team {
   background-color: #F5F4FA;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
   text-align: center;
+  flex-direction: column;
 }
 
 .team-card {
@@ -835,6 +881,20 @@ body {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .team {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    max-width: 1200px;
+  }
+}
 .clients-list {
   display: flex;
   flex-wrap: wrap;

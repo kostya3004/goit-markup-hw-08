@@ -23,7 +23,7 @@ li {
 
 img {
     display: block;
-    max-width: 100%;
+    // max-width: 100%;
     height: auto;
 }
 
@@ -38,8 +38,16 @@ body {
     letter-spacing: 0.03em;
 }
 .index-heading2 {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 118%;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+}
+@media screen and (min-width:1200px) {
+    .index-heading2 {
+        font-size: 36px;
+        line-height: 117%;
+        margin-bottom: 50px;
+    }
 }
