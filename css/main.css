@@ -848,7 +848,6 @@ body {
 }
 .team {
   background-color: #F5F4FA;
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -886,18 +885,15 @@ body {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-card-photo {
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .team {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1200px;
   }
 }
 .clients-list {
