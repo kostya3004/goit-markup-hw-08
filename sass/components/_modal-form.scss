@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
 }
-
+.modal-form-btn-close {
+    fill: var(--main-color);
+}
 .modal-form-btn-close:hover,
 .modal-form-btn-close:focus {
     fill: var(--accent-color);
