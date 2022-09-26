@@ -188,7 +188,7 @@ body {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 150%;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -210,21 +210,23 @@ body {
   position: relative;
 }
 .modal-form-terms-checkbox > a {
-  line-height: 171%;
+  font-size: 12px;
+  line-height: 117%;
   color: var(--accent-color);
 }
 
 .modal-form-terms-text {
-  line-height: 171%;
+  font-size: 12px;
+  line-height: 117%;
   color: var(--secondary-color);
 }
 
 .modal-form-icon-unchecked {
   position: relative;
-  top: 3px;
+  top: -1px;
   left: 0;
   display: none;
-  margin-right: 7px;
+  margin-right: 8px;
   transition: fill var(--transition-prop);
 }
 .modal-form-checkbox-input:not(:checked) + .modal-form-icon-unchecked {
@@ -236,10 +238,10 @@ body {
 
 .modal-form-icon-checked {
   position: relative;
-  top: 3px;
+  top: -1px;
   left: 0;
   display: none;
-  margin-right: 7px;
+  margin-right: 8px;
 }
 .modal-form-checkbox-input:checked + .modal-form-icon-unchecked + .modal-form-icon-checked {
   display: block;
@@ -248,6 +250,27 @@ body {
   box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-heading {
+    line-height: 115%;
+  }
+  .modal-form-terms-checkbox > a {
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--accent-color);
+  }
+  .modal-form-terms-text {
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--secondary-color);
+  }
+  .modal-form-icon-unchecked {
+    top: 3px;
+  }
+  .modal-form-icon-checked {
+    top: 3px;
+  }
+}
 /* .modal-form-checkbox-input {
     position: absolute;
     appearance: none;
@@ -255,8 +278,8 @@ body {
 .modal {
   background-color: #FFF;
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -278,6 +301,12 @@ body {
   transition: fill var(--transition-prop);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -606,14 +635,14 @@ body {
   }
 }
 .index-heading {
-  width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 162%;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--dark-scheme-text-color);
+  color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -625,14 +654,52 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-mobile/hero-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
+.order-btn {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+  color: #FFF;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  transition: background-color var(--transition-prop);
+}
+.order-btn:hover, .order-btn:focus {
+  background-color: #188CE8;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .index-heading {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .heading {
+    max-width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .order-btn {
+    padding: 10px 32px;
+  }
+}
 @media screen and (max-width: 767px) {
   .heading {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-mobile/hero-bg-mobile.jpg);
@@ -663,22 +730,6 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-desktop/hero-bg-desktop@2x.jpg);
   }
 }
-.order-btn {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1.9;
-  color: #FFF;
-  background-color: var(--accent-color);
-  border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
-  transition: background-color var(--transition-prop);
-}
-.order-btn:hover, .order-btn:focus {
-  background-color: #188CE8;
-}
-
 .advantages {
   padding-bottom: 0px;
 }

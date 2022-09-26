@@ -1,8 +1,8 @@
 .modal {
     background-color: #FFF;
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,4 +22,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     transition: fill var(--transition-prop);
+}
+
+@media screen and (min-width:1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+}
 }
