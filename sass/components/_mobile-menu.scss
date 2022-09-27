@@ -16,6 +16,7 @@
 .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    max-height: 100%;
 }
 
 .mobile-menu.is-open {
@@ -29,7 +30,8 @@
     flex-direction: column;
     gap: 32px;
     padding-top: 48px;
-    margin-bottom: 306px;
+    margin-bottom: 100px;
+    // margin-bottom: 306px;
 }
         
 .mobile-menu__navigation-list-item {
@@ -97,6 +99,7 @@
 .mobile-menu__social-list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .mobile-menu__social-list-link {
